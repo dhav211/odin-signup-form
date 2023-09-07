@@ -1,1 +1,1 @@
-# odin-signup-form
+Here is my attempt at the sign up page project for The Odin Project. Hopefully this will show the world that I have the skills to manage forms in html and css.
