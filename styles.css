@@ -1,0 +1,152 @@
+@font-face {
+    font-family: norse;
+    src: url("Norse-Bold.otf");
+}
+
+html,
+body {
+    margin: 0 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+@media (max-width: 800px) {
+    body {
+        flex-direction: column;
+    }
+}
+
+.splash {
+    background-image: url("splash_image.jpg");
+    background-size: cover;
+    flex: 1 0;
+    min-height: 256px;
+    min-width: 400px;
+}
+
+.splash-banner {
+    background-color: rgba(0, 0, 0, .65);
+    height: 128px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 25%;
+}
+
+@media (max-width: 800px) {
+    .splash-banner {
+        height: 96px;
+    }
+}
+
+.splash-banner>img {
+    height: 80%;
+    width: auto;
+}
+
+.splash-banner>span {
+    color: white;
+    font-size: 64px;
+    font-family: "norse";
+}
+
+.content {
+    flex: 2 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote {
+    background-color: #f9fafb;
+    font-size: 28px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: -24px;
+    position: relative;
+    overflow: visible;
+    flex: 1 1 350px;
+}
+
+
+.quote>div {
+    padding: 0px 128px 0px 48px;
+    position: absolute;
+    bottom: 10%;
+}
+
+@media (max-width: 800px) {
+    .quote>div {
+        bottom: 0;
+    }
+}
+
+form {
+    margin: 0px 0px;
+    padding: 0px 0px;
+    display: flex;
+    flex-direction: column;
+    flex: 2 1 75%;
+}
+
+.sign-up {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: white;
+    box-shadow: 0 10px 15px -15px rgba(111, 111, 111, 0.65);
+    padding: 16px 0 48px 48px;
+    position: relative;
+    flex-grow: 1;
+    z-index: 10;
+}
+
+.sign-up>.forms {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 64px;
+    row-gap: 24px;
+}
+
+input {
+    width: 300px;
+    border: solid 1px #E5E7EB;
+    border-radius: 4px;
+}
+
+input:invalid {
+    border: solid 1px red;
+}
+
+.submit-area {
+    flex: 1 1 100%;
+    padding: 48px 0 0 48px;
+    background-color: #f9fafb;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #596D48;
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    width: 192px;
+    height: 48px;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px rgba(111, 111, 111, 0.65);
+
+}
