@@ -27,7 +27,12 @@ body {
     background-size: cover;
     flex: 1 0;
     min-height: 256px;
-    min-width: 400px;
+}
+
+@media (min-width: 400) {
+    .splash{
+        min-width: 400px;
+    }
 }
 
 .splash-banner {
@@ -70,16 +75,23 @@ body {
     font-size: 28px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-bottom: -24px;
-    position: relative;
     overflow: visible;
     flex: 1 1 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end; 
+    padding-bottom: 48px;
 }
 
+@media (max-width: 500px) {
+    .quote {
+        padding-bottom: 0;
+
+    }
+}
 
 .quote>div {
-    padding: 0px 128px 0px 48px;
-    position: absolute;
-    bottom: 10%;
+    padding: 0 128px 0 48px;
 }
 
 @media (max-width: 800px) {
@@ -116,12 +128,13 @@ form {
 
 input {
     width: 300px;
-    border: solid 1px #E5E7EB;
+    border: solid 1px #ebe5e5;
     border-radius: 4px;
 }
 
-input:invalid {
-    border: solid 1px red;
+#pword-error-text {
+    margin-top: 0px;
+    color: red;
 }
 
 .submit-area {
